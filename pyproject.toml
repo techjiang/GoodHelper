@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "goodhelper"
+version = "0.1.0"
+description = "好助手：本地优先的智能助理，速记、待办、日程提醒与知识库问答"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+keywords = ["assistant", "cli", "notes", "reminder", "knowledge-base"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+goodhelper = "goodhelper.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["goodhelper*"]
+
+[tool.setuptools.package-data]
+goodhelper = ["web/static/*"]

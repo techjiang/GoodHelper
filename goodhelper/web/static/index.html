@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>好助手</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>好助手</h1>
+        <p class="muted" id="clock">本地 · 离线可用</p>
+      </div>
+    </div>
+    <section class="card" id="brief">
+      <h2>今日</h2>
+      <p class="muted">加载中…</p>
+    </section>
+    <section class="card">
+      <h2>试试这些</h2>
+      <ul class="chips" id="chips">
+        <li><button data-q="明天下午三点 交周报">明天下午三点 交周报</button></li>
+        <li><button data-q="待办 今晚八点 看书 紧急">待办 今晚八点 看书 紧急</button></li>
+        <li><button data-q="记一下 想换一把静音键盘 #生活">记一下 想换一把静音键盘 #生活</button></li>
+        <li><button data-q="待办列表">待办列表</button></li>
+        <li><button data-q="算 199*12">算 199*12</button></li>
+        <li><button data-q="帮助">帮助</button></li>
+      </ul>
+    </section>
+    <footer class="muted small">数据存在本机 SQLite，不上传。</footer>
+  </aside>
+
+  <main class="chat">
+    <div class="messages" id="messages"></div>
+    <form class="composer" id="composer">
+      <input id="input" autocomplete="off" placeholder="说点什么，回车发送…" autofocus />
+      <button type="submit">发送</button>
+    </form>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

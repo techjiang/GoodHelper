@@ -1,0 +1,12 @@
+# 复制到 ~/.goodhelper/config.toml 后按需修改
+[assistant]
+name = "好助手"
+user_name = "朋友"
+remind_before = 10
+
+[web]
+host = "127.0.0.1"
+port = 8321
+
+[plugins]
+enabled = ["note", "todo", "agenda", "kb", "calc", "help"]
