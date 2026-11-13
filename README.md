@@ -1,11 +1,15 @@
 # 好助手 GoodHelper
 
+![好助手 Web 界面](docs/screenshots/web.png)
+
 一只装在自己机器上的助手：**记下来、排上号、按时提醒，顺便查自己的笔记**。
 
 - 纯 Python 标准库实现，零第三方依赖，`python3 -m goodhelper` 直接跑
 - 数据全部落在本机 SQLite（`~/.goodhelper/goodhelper.db`），不联网、不上传
 - 一个引擎，三套入口：命令行对话、今日看板、浏览器界面
 - 能力做成插件，加一个文件就多一项本事
+
+版本与变更见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 快速开始
 

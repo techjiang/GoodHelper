@@ -26,3 +26,7 @@ include = ["goodhelper*"]
 
 [tool.setuptools.package-data]
 goodhelper = ["web/static/*"]
+
+[project.urls]
+Homepage = "https://github.com/techjiang/GoodHelper"
+Changelog = "https://github.com/techjiang/GoodHelper/blob/main/CHANGELOG.md"
