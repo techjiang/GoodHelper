@@ -98,7 +98,8 @@ def make_handler(service: Service) -> type[BaseHTTPRequestHandler]:
 def create_server(config: Config, host: str | None = None, port: int | None = None) -> ThreadingHTTPServer:
     service = Service(config)
     handler = make_handler(service)
-    return ThreadingHTTPServer((host or config.web_host, port or config.web_port), handler)
+    # port 传 0 表示交给系统挑空闲端口，别当成"没指定"
+    return ThreadingHTTPServer((host or config.web_host, config.web_port if port is None else port), handler)
 
 
 def serve(config: Config, host: str | None = None, port: int | None = None) -> int:

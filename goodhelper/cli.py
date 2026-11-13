@@ -123,7 +123,7 @@ def cmd_remind(args: argparse.Namespace) -> int:
 def cmd_serve(args: argparse.Namespace) -> int:
     config = load_config(args.config)
     host = args.host or config.web_host
-    port = args.port or config.web_port
+    port = config.web_port if args.port is None else args.port
     from goodhelper.web.app import serve
 
     return serve(config, host=host, port=port)
