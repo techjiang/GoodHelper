@@ -17,4 +17,5 @@
 - 纯标准库实现，`python3 -m goodhelper` 直接跑，无需安装依赖
 - 插件即文件，新增能力不用改路由、不用改界面
 - 24 个单元测试覆盖时间解析、意图路由、存储与 Web 接口
-- 界面截图见 `docs/screenshots/web.png`
+- 界面截图见 `docs/screenshots/cli.png` 与 `docs/screenshots/web.png`
+- 修复 `create_server(port=0)` 被当成未指定端口而回落到 8321 的问题

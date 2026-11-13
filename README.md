@@ -1,6 +1,12 @@
 # 好助手 GoodHelper
 
-![好助手 Web 界面](docs/screenshots/web.png)
+命令行对话：
+
+![命令行对话](docs/screenshots/cli.png)
+
+浏览器界面：
+
+![浏览器界面](docs/screenshots/web.png)
 
 一只装在自己机器上的助手：**记下来、排上号、按时提醒，顺便查自己的笔记**。
 
